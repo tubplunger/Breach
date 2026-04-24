@@ -125,7 +125,7 @@ MonoBehaviour:
   - {fileID: 0}
   firePoint: {fileID: 305871762871176548}
   projectilePrefab: {fileID: 2584964751671554830, guid: 518f4c5156c6f0d49b6dc99d8fee7f7f, type: 3}
-  patrolSpeed: 70
+  patrolSpeed: 2
   pointReachDistance: 0.5
   detectionRange: 12
   attackRange: 10
@@ -192,7 +192,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 517f3bc26f19c5348bc2bca2050bd5a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

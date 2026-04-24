@@ -135,8 +135,7 @@ public class PlayerTimeFPSController : MonoBehaviour
 
     void HandleShooting()
     {
-        // Player shooting should still feel responsive even when time is slowed
-        fireTimer += Time.unscaledDeltaTime;
+        fireTimer += Time.deltaTime;
 
         if (Input.GetMouseButton(0) && fireTimer >= fireCooldown)
         {
