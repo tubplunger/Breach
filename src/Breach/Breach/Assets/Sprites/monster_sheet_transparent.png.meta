@@ -1,0 +1,1324 @@
+fileFormatVersion: 2
+guid: 46852ccbdb500b242a2a1e1d16813194
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monster_sheet_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 663
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2b6723ace758340be9d553c7d47380
+      internalID: -1793410450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 663
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cbd621895186b44a8e83c89bd49ed0
+      internalID: -1994161628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 662
+        width: 83
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a1ecfd50221614f8a663a0a7d3c6c0
+      internalID: 303615400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 660
+        width: 67
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ce79ad9e3e62141869a2c4a192a4d6
+      internalID: 671425681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 659
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f7184e75c222a4fbfd2385e3315895
+      internalID: -838867326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 583
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb41be428bbee7348954cec9e04540cf
+      internalID: -624022487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 583
+        width: 57
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ba91baba208c348a0a182fa164e67a
+      internalID: -1655101303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 582
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e0bec37e4a6a048b496951fc4bd37d
+      internalID: 1836943634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 580
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e3372f7c29ae249871ae292b91f098
+      internalID: -1602856680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 578
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35379d369530ef48821982203c3ba81
+      internalID: -2178398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 507
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282f9fa4f6417e846b01b5a0e7f51486
+      internalID: -246635675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 505
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7388fcb9ef89345a7b33f4f0a3e4e7
+      internalID: 261472515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 505
+        width: 84
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db33dbcfe72cea747be6732a46dadf05
+      internalID: -1414845192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 500
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdbb5f84d8921e4989d7277cb7bd013
+      internalID: -2076136366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 501
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9127a7d81863849aafb8301e844569
+      internalID: 1514604912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 425
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d71b13b21bdca4baad43eda3ccdbcb
+      internalID: 1094465137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 432
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3852add82510e647a7a51d124069a22
+      internalID: 2068746202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 431
+        width: 77
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba73a160f809ea42a2be9fb43f75479
+      internalID: 1834356259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 429
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9c3b8df2f23e040a7f191d6c18571a
+      internalID: -1405694760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 423
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f53bdf45761b2a4da41dce57e9ba9cd
+      internalID: -276861475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 352
+        width: 86
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f8f7905872e72469b601c7b09443b3
+      internalID: -865936389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 353
+        width: 85
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a7489f8c728834db0c6436cb80f43b
+      internalID: -602849383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 354
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3401f9ba0918f6144820ad998c7a3a84
+      internalID: -398795637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 350
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47bcdeecbe78d04e930abf93bba2b58
+      internalID: 1446754736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 349
+        width: 83
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b58ea6d940bb3b4eb0ea282d346828b
+      internalID: -1475245812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 348
+        width: 86
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7094d5a0a1d41674e8a169f5a156900b
+      internalID: 1788392573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 344
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86242258c35193e43928960746bbb507
+      internalID: 865320175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 344
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba49c5f0878762545a204786ff8ef97e
+      internalID: 535167241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 272
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708c83b874636b443aebc216054b59d1
+      internalID: -372085293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 275
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a17e551fdefe6479c1fc0bfbdf74a3
+      internalID: -464253689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 274
+        width: 92
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820dc815b69575a488a0875ec96406c0
+      internalID: 1381682143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 275
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74b2863a1ddfbd408f4b92ac57aa6e0
+      internalID: 393780762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 271
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a707c26180608742aff994c36837619
+      internalID: -1607497638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 268
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac90c812eea8f8540844de568e457886
+      internalID: 625605604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 265
+        width: 91
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f339ecb59e2604d8329db0e5914c09
+      internalID: -1720238708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 265
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524d6e5b1be87244894bf34684442331
+      internalID: -405106400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 197
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a28778d11fcf2048bba257c34ab0f4c
+      internalID: 1217965288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 199
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bf572c3183ecc4f97f54d2f8836603
+      internalID: 207829134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 195
+        width: 76
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e13bb8dba665643855a5843585377f
+      internalID: 1097949908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 193
+        width: 73
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd3a5be904be30449078a6e3371b9d0
+      internalID: 742771799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 192
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3b7339708dd6e498424b0b2defcdc3
+      internalID: -165500245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 190
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e69f521842d3f14182b8876186e9e11
+      internalID: 840796302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 189
+        width: 77
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2296646cd2e922940b06e74544101ec7
+      internalID: -2067570661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 187
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d438a472d87b0248b1cf85d63e4b5c5
+      internalID: -43679799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 105
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40e2d93f62d1ff4aae03f771b28c744
+      internalID: 889898536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 104
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae40aa39c977c964f8b395e18a4f047c
+      internalID: 424756477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 102
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c720717d5eae6e24cb13b0a187084b86
+      internalID: -155999891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 100
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058ec0432b9385b4e9ed6565d9bd3526
+      internalID: -1531225143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 99
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de85468fac8287e44a546fe67547cc57
+      internalID: -385794384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 23
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f701a596ec7fc4c8f02815e0cd2635
+      internalID: 2012137463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 24
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a83399e2c0adf747ad98d326f95fcb5
+      internalID: 1844364760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 21
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648480f385ddfdf4fbb7b464d9fc4329
+      internalID: 1411816176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 20
+        width: 67
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022c968b569efd2409271b4f61ab2dea
+      internalID: 666314059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 23
+        width: 61
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaf05ec82fd67049b9128cdb123ed25
+      internalID: 1905747665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_sheet_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 23
+        width: 59
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05b4b5c10cd1cd45b55d820c4f801f4
+      internalID: 1027910383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 621f1f5b908e77947aa4d74e0fc8ccf2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      monster_sheet_transparent_0: -1793410450
+      monster_sheet_transparent_1: -1994161628
+      monster_sheet_transparent_10: -246635675
+      monster_sheet_transparent_11: 261472515
+      monster_sheet_transparent_12: -1414845192
+      monster_sheet_transparent_13: -2076136366
+      monster_sheet_transparent_14: 1514604912
+      monster_sheet_transparent_15: 1094465137
+      monster_sheet_transparent_16: 2068746202
+      monster_sheet_transparent_17: 1834356259
+      monster_sheet_transparent_18: -1405694760
+      monster_sheet_transparent_19: -276861475
+      monster_sheet_transparent_2: 303615400
+      monster_sheet_transparent_20: -865936389
+      monster_sheet_transparent_21: -602849383
+      monster_sheet_transparent_22: -398795637
+      monster_sheet_transparent_23: 1446754736
+      monster_sheet_transparent_24: -1475245812
+      monster_sheet_transparent_25: 1788392573
+      monster_sheet_transparent_26: 865320175
+      monster_sheet_transparent_27: 535167241
+      monster_sheet_transparent_28: -372085293
+      monster_sheet_transparent_29: -464253689
+      monster_sheet_transparent_3: 671425681
+      monster_sheet_transparent_30: 1381682143
+      monster_sheet_transparent_31: 393780762
+      monster_sheet_transparent_32: -1607497638
+      monster_sheet_transparent_33: 625605604
+      monster_sheet_transparent_34: -1720238708
+      monster_sheet_transparent_35: -405106400
+      monster_sheet_transparent_36: 1217965288
+      monster_sheet_transparent_37: 207829134
+      monster_sheet_transparent_38: 1097949908
+      monster_sheet_transparent_39: 742771799
+      monster_sheet_transparent_4: -838867326
+      monster_sheet_transparent_40: -165500245
+      monster_sheet_transparent_41: 840796302
+      monster_sheet_transparent_42: -2067570661
+      monster_sheet_transparent_43: -43679799
+      monster_sheet_transparent_44: 889898536
+      monster_sheet_transparent_45: 424756477
+      monster_sheet_transparent_46: -155999891
+      monster_sheet_transparent_47: -1531225143
+      monster_sheet_transparent_48: -385794384
+      monster_sheet_transparent_49: 2012137463
+      monster_sheet_transparent_5: -624022487
+      monster_sheet_transparent_50: 1844364760
+      monster_sheet_transparent_51: 1411816176
+      monster_sheet_transparent_52: 666314059
+      monster_sheet_transparent_53: 1905747665
+      monster_sheet_transparent_54: 1027910383
+      monster_sheet_transparent_6: -1655101303
+      monster_sheet_transparent_7: 1836943634
+      monster_sheet_transparent_8: -1602856680
+      monster_sheet_transparent_9: -2178398
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

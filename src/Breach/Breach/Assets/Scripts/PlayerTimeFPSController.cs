@@ -32,6 +32,10 @@ public class PlayerTimeFPSController : MonoBehaviour
     [Header("Shooting")]
     public float fireCooldown = 0.2f;
 
+    [Header("Muzzle Flash")]
+    public GameObject muzzleFlashObject;
+    public float muzzleFlashDuration = 0.05f;
+
     [Header("Debug")]
     public bool showDebugGUI = true;
     public bool logTimeStateChanges = true;
@@ -43,6 +47,8 @@ public class PlayerTimeFPSController : MonoBehaviour
     private bool isTryingToMove;
     private float currentTargetTimeScale;
     private float fireTimer;
+
+    private float muzzleFlashTimer;
 
     void Awake()
     {
@@ -70,6 +76,7 @@ public class PlayerTimeFPSController : MonoBehaviour
         HandleMovement();
         HandleTimeControl();
         HandleShooting();
+        HandleMuzzleFlash();
     }
 
     void HandleMouseLook()
@@ -149,13 +156,21 @@ public class PlayerTimeFPSController : MonoBehaviour
         if (projectilePrefab == null || firePoint == null)
             return;
 
-        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        Vector3 flatDirection = playerCamera.transform.forward;
+        flatDirection.y = 0f;
+        flatDirection.Normalize();
+
+        Quaternion flatRotation = Quaternion.LookRotation(flatDirection);
+
+        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, flatRotation);
 
         Projectile projectileScript = projectile.GetComponent<Projectile>();
         if (projectileScript != null)
         {
             projectileScript.owner = gameObject;
         }
+
+        TriggerMuzzleFlash();
 
         Debug.Log("Player fired projectile.");
     }
@@ -170,6 +185,26 @@ public class PlayerTimeFPSController : MonoBehaviour
     {
         Time.timeScale = Mathf.Clamp(newScale, 0.01f, 1f);
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
+    }
+
+    void TriggerMuzzleFlash()
+    {
+        if (muzzleFlashObject == null) return;
+
+        muzzleFlashObject.SetActive(true);
+        muzzleFlashTimer = muzzleFlashDuration;
+    }
+
+    void HandleMuzzleFlash()
+    {
+        if (muzzleFlashObject == null || !muzzleFlashObject.activeSelf) return;
+
+        muzzleFlashTimer -= Time.deltaTime;
+
+        if (muzzleFlashTimer <= 0f)
+        {
+            muzzleFlashObject.SetActive(false);
+        }
     }
 
     void OnGUI()

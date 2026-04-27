@@ -20,6 +20,12 @@ public class Health : MonoBehaviour
     {
         currentHealth -= amount;
 
+        HitFlash hitFlash = GetComponent<HitFlash>();
+        if (hitFlash != null)
+        {
+            hitFlash.Flash();
+        }
+
         if (logDamage)
         {
             Debug.Log(gameObject.name + " took " + amount + " damage. Health: " + currentHealth + "/" + maxHealth);
