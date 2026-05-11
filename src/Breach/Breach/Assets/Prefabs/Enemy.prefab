@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3467086235928102918}
   - component: {fileID: 8864043939055782426}
   - component: {fileID: 3076461890452925881}
+  - component: {fileID: 3804656066457533745}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -131,6 +132,21 @@ MonoBehaviour:
   attackRange: 10
   fireCooldown: 1.2
   turnSpeed: 8
+--- !u!114 &3804656066457533745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278624944901146698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5fc17eb3ab3904b96304ca01c92378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 6888629387422506378}
+  hitColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
 --- !u!1 &8209187177172704408
 GameObject:
   m_ObjectHideFlags: 0

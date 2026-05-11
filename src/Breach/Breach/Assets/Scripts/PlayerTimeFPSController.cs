@@ -7,8 +7,6 @@ public class PlayerTimeFPSController : MonoBehaviour
 {
     [Header("References")]
     public Camera playerCamera;
-    public Transform firePoint;
-    public GameObject projectilePrefab;
 
     private CharacterController controller;
 
@@ -29,13 +27,6 @@ public class PlayerTimeFPSController : MonoBehaviour
 
     public float timeChangeSpeed = 8f;
 
-    [Header("Shooting")]
-    public float fireCooldown = 0.2f;
-
-    [Header("Muzzle Flash")]
-    public GameObject muzzleFlashObject;
-    public float muzzleFlashDuration = 0.05f;
-
     [Header("Debug")]
     public bool showDebugGUI = true;
     public bool logTimeStateChanges = true;
@@ -46,9 +37,6 @@ public class PlayerTimeFPSController : MonoBehaviour
     private Vector2 moveInput;
     private bool isTryingToMove;
     private float currentTargetTimeScale;
-    private float fireTimer;
-
-    private float muzzleFlashTimer;
 
     void Awake()
     {
@@ -75,8 +63,6 @@ public class PlayerTimeFPSController : MonoBehaviour
         ReadMovementInput();
         HandleMovement();
         HandleTimeControl();
-        HandleShooting();
-        HandleMuzzleFlash();
     }
 
     void HandleMouseLook()
@@ -140,41 +126,6 @@ public class PlayerTimeFPSController : MonoBehaviour
         ApplyTimeScale(newTimeScale);
     }
 
-    void HandleShooting()
-    {
-        fireTimer += Time.deltaTime;
-
-        if (Input.GetMouseButton(0) && fireTimer >= fireCooldown)
-        {
-            FireProjectile();
-            fireTimer = 0f;
-        }
-    }
-
-    void FireProjectile()
-    {
-        if (projectilePrefab == null || firePoint == null)
-            return;
-
-        Vector3 flatDirection = playerCamera.transform.forward;
-        flatDirection.y = 0f;
-        flatDirection.Normalize();
-
-        Quaternion flatRotation = Quaternion.LookRotation(flatDirection);
-
-        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, flatRotation);
-
-        Projectile projectileScript = projectile.GetComponent<Projectile>();
-        if (projectileScript != null)
-        {
-            projectileScript.owner = gameObject;
-        }
-
-        TriggerMuzzleFlash();
-
-        Debug.Log("Player fired projectile.");
-    }
-
     void ApplyTimeScale(float newScale)
     {
         Time.timeScale = Mathf.Clamp(newScale, 0.01f, 1f);
@@ -187,26 +138,6 @@ public class PlayerTimeFPSController : MonoBehaviour
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
     }
 
-    void TriggerMuzzleFlash()
-    {
-        if (muzzleFlashObject == null) return;
-
-        muzzleFlashObject.SetActive(true);
-        muzzleFlashTimer = muzzleFlashDuration;
-    }
-
-    void HandleMuzzleFlash()
-    {
-        if (muzzleFlashObject == null || !muzzleFlashObject.activeSelf) return;
-
-        muzzleFlashTimer -= Time.deltaTime;
-
-        if (muzzleFlashTimer <= 0f)
-        {
-            muzzleFlashObject.SetActive(false);
-        }
-    }
-
     void OnGUI()
     {
         if (!showDebugGUI) return;
@@ -217,6 +148,5 @@ public class PlayerTimeFPSController : MonoBehaviour
         GUI.Label(new Rect(20, 80, 240, 20), "Current Time Scale: " + Time.timeScale.ToString("F2"));
         GUI.Label(new Rect(20, 100, 240, 20), "Fixed Delta Time: " + Time.fixedDeltaTime.ToString("F4"));
         GUI.Label(new Rect(20, 120, 240, 20), "Move Input: " + moveInput);
-        GUI.Label(new Rect(20, 140, 240, 20), "Fire Ready: " + (fireTimer >= fireCooldown));
     }
 }
