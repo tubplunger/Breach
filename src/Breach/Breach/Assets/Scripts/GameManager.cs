@@ -11,11 +11,19 @@ public class GameManager : MonoBehaviour
     public GameObject winUI;
     public GameObject loseUI;
 
+    [Header("Enemies")]
+    public int enemiesRemaining;
+
     private bool gameEnded = false;
 
     void Awake()
     {
         Instance = this;
+    }
+
+    void Start()
+    {
+        enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
 
     void Update()
@@ -51,14 +59,19 @@ public class GameManager : MonoBehaviour
     {
         if (gameEnded) return;
 
-        gameEnded = true;
+        enemiesRemaining--;
 
-        if (winUI != null)
+        if (enemiesRemaining <= 0)
         {
-            winUI.SetActive(true);
-        }
+            gameEnded = true;
 
-        EndGameState();
+            if (winUI != null)
+            {
+                winUI.SetActive(true);
+            }
+
+            EndGameState();
+        }
     }
 
     void EndGameState()
