@@ -18,15 +18,6 @@ public class PlayerTimeFPSController : MonoBehaviour
     public float mouseSensitivity = 2f;
     public float maxLookAngle = 85f;
 
-    [Header("Time Control")]
-    [Range(0.01f, 1f)]
-    public float movingTimeScale = 1f;
-
-    [Range(0.01f, 1f)]
-    public float idleTimeScale = 0.05f;
-
-    public float timeChangeSpeed = 8f;
-
     [Header("Debug")]
     public bool showDebugGUI = true;
     public bool logTimeStateChanges = true;
@@ -36,7 +27,6 @@ public class PlayerTimeFPSController : MonoBehaviour
 
     private Vector2 moveInput;
     private bool isTryingToMove;
-    private float currentTargetTimeScale;
 
     void Awake()
     {
@@ -52,17 +42,14 @@ public class PlayerTimeFPSController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        currentTargetTimeScale = idleTimeScale;
-        ApplyTimeScaleImmediate(currentTargetTimeScale);
     }
 
     void Update()
     {
         HandleMouseLook();
         ReadMovementInput();
+        UpdateTimeIntent();
         HandleMovement();
-        HandleTimeControl();
     }
 
     void HandleMouseLook()
@@ -90,6 +77,23 @@ public class PlayerTimeFPSController : MonoBehaviour
         isTryingToMove = moveInput.sqrMagnitude > 0.001f;
     }
 
+    void UpdateTimeIntent()
+    {
+        if (TimeManager.Instance == null)
+        {
+            return;
+        }
+
+        if (isTryingToMove)
+        {
+            TimeManager.Instance.SetTimeState(TimeState.Normal);
+        }
+        else
+        {
+            TimeManager.Instance.SetTimeState(TimeState.Slow);
+        }
+    }
+
     void HandleMovement()
     {
         Vector3 move = (transform.right * moveInput.x + transform.forward * moveInput.y);
@@ -102,51 +106,5 @@ public class PlayerTimeFPSController : MonoBehaviour
 
         verticalVelocity += gravity * Time.unscaledDeltaTime;
         controller.Move(Vector3.up * verticalVelocity * Time.unscaledDeltaTime);
-    }
-
-    void HandleTimeControl()
-    {
-        float previousTarget = currentTargetTimeScale;
-        currentTargetTimeScale = isTryingToMove ? movingTimeScale : idleTimeScale;
-
-        if (logTimeStateChanges && !Mathf.Approximately(previousTarget, currentTargetTimeScale))
-        {
-            if (isTryingToMove)
-                Debug.Log("Player moving -> Time returning to normal.");
-            else
-                Debug.Log("Player stopped -> Time slowing down.");
-        }
-
-        float newTimeScale = Mathf.Lerp(
-            Time.timeScale,
-            currentTargetTimeScale,
-            timeChangeSpeed * Time.unscaledDeltaTime
-        );
-
-        ApplyTimeScale(newTimeScale);
-    }
-
-    void ApplyTimeScale(float newScale)
-    {
-        Time.timeScale = Mathf.Clamp(newScale, 0.01f, 1f);
-        Time.fixedDeltaTime = 0.02f * Time.timeScale;
-    }
-
-    void ApplyTimeScaleImmediate(float newScale)
-    {
-        Time.timeScale = Mathf.Clamp(newScale, 0.01f, 1f);
-        Time.fixedDeltaTime = 0.02f * Time.timeScale;
-    }
-
-    void OnGUI()
-    {
-        if (!showDebugGUI) return;
-
-        GUI.Box(new Rect(10, 10, 280, 165), "Time Debug");
-        GUI.Label(new Rect(20, 40, 240, 20), "Moving Input: " + isTryingToMove);
-        GUI.Label(new Rect(20, 60, 240, 20), "Target Time Scale: " + currentTargetTimeScale.ToString("F2"));
-        GUI.Label(new Rect(20, 80, 240, 20), "Current Time Scale: " + Time.timeScale.ToString("F2"));
-        GUI.Label(new Rect(20, 100, 240, 20), "Fixed Delta Time: " + Time.fixedDeltaTime.ToString("F4"));
-        GUI.Label(new Rect(20, 120, 240, 20), "Move Input: " + moveInput);
     }
 }
