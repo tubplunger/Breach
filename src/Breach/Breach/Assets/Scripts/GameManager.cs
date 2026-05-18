@@ -26,6 +26,16 @@ public class GameManager : MonoBehaviour
         enemiesRemaining = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
 
+    void OnEnable()
+    {
+        GameEvents.OnHealthDied += HandleHealthDied;
+    }
+
+    void OnDisable()
+    {
+        GameEvents.OnHealthDied -= HandleHealthDied;
+    }
+
     void Update()
     {
         if (!gameEnded) return;
@@ -38,6 +48,18 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             QuitGame();
+        }
+    }
+
+    void HandleHealthDied(Health health)
+    {
+        if (health.CompareTag("Player"))
+        {
+            PlayerDied();
+        }
+        else if (health.CompareTag("Enemy"))
+        {
+            EnemyDied();
         }
     }
 

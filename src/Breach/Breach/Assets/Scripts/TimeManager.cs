@@ -27,6 +27,16 @@ public class TimeManager : MonoBehaviour
         Instance = this;
     }
 
+    void OnEnable()
+    {
+        GameEvents.OnTimeStateRequested += SetTimeState;
+    }
+
+    void OnDisable()
+    {
+        GameEvents.OnTimeStateRequested -= SetTimeState;
+    }
+
     void Start()
     {
         SetTimeState(TimeState.Slow);

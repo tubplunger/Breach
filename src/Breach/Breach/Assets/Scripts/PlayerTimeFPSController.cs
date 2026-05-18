@@ -86,11 +86,11 @@ public class PlayerTimeFPSController : MonoBehaviour
 
         if (isTryingToMove)
         {
-            TimeManager.Instance.SetTimeState(TimeState.Normal);
+            GameEvents.TimeStateRequested(TimeState.Normal);
         }
         else
         {
-            TimeManager.Instance.SetTimeState(TimeState.Slow);
+            GameEvents.TimeStateRequested(TimeState.Slow);
         }
     }
 
