@@ -13,17 +13,27 @@ public class Projectile : MonoBehaviour
     public GameObject owner;
 
     private float lifeTimer;
+    private PooledObject pooledObject;
+
+    void Awake()
+    {
+        pooledObject = GetComponent<PooledObject>();
+    }
+
+    void OnEnable()
+    {
+        lifeTimer = 0f;
+    }
 
     void Update()
     {
-        // normal deltatime to slow down
         transform.position += transform.forward * speed * Time.deltaTime;
 
         lifeTimer += Time.deltaTime;
 
         if (lifeTimer >= lifetime)
         {
-            Destroy(gameObject);
+            Despawn();
         }
     }
 
@@ -39,6 +49,18 @@ public class Projectile : MonoBehaviour
             health.TakeDamage(damage);
         }
 
-        Destroy(gameObject);
+        Despawn();
+    }
+
+    void Despawn()
+    {
+        if (pooledObject != null)
+        {
+            pooledObject.ReturnToPool();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

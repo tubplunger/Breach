@@ -9,6 +9,9 @@ public class WeaponController : MonoBehaviour
     public WeaponData[] availableWeapons;
     public int currentWeaponIndex = 0;
 
+    [Header("Pooling")]
+    public ObjectPool projectilePool;
+
     [Header("References")]
     public Camera playerCamera;
     public Transform firePoint;
@@ -89,11 +92,20 @@ public class WeaponController : MonoBehaviour
 
         Quaternion flatRotation = Quaternion.LookRotation(flatDirection);
 
-        GameObject projectile = Instantiate(
-            currentWeapon.projectilePrefab,
-            firePoint.position,
-            flatRotation
-        );
+        GameObject projectile;
+
+        if (projectilePool != null)
+        {
+            projectile = projectilePool.GetObject(firePoint.position, flatRotation);
+        }
+        else
+        {
+            projectile = Instantiate(
+                currentWeapon.projectilePrefab,
+                firePoint.position,
+                flatRotation
+            );
+        }
 
         Projectile projectileScript = projectile.GetComponent<Projectile>();
 

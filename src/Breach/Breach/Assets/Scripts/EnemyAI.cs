@@ -34,6 +34,9 @@ public class EnemyAI : MonoBehaviour
     [Header("Combat")]
     public float fireCooldown = 1.2f;
 
+    [Header("Pooling")]
+    public ObjectPool projectilePool;
+
     [Header("Debug")]
     public bool showDebugLogs = false;
 
@@ -172,8 +175,16 @@ public class EnemyAI : MonoBehaviour
         if (projectilePrefab == null || firePoint == null)
             return;
 
-        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        GameObject projectile;
 
+        if (projectilePool != null)
+        {
+            projectile = projectilePool.GetObject(firePoint.position, firePoint.rotation);
+        }
+        else
+        {
+            projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        }
         Projectile projectileScript = projectile.GetComponent<Projectile>();
 
         if (projectileScript != null)
